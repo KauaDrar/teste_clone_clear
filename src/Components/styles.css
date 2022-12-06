@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+body {
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+.table-function {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-container {
+  display: table;
+  text-align: center;
+  width: 800px;
+  height: 600px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.367);
+  background-color: #f3f3f3;
+}
+
+table {
+  width: 100%;
+  height: auto;
+  border-collapse: collapse;
+}
+
+tr {
+  height: 100%;
+}
+
+th {
+  height: 100%;
+  background-color: #f3f3f3;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+.tr-data {
+  height: 100%;
+  background-color: #f3f3f3;
+  padding: 10px;
+}
+
+td {
+  height: 100%;
+  font-weight: 600;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+
+.div-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.container-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.div-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 30px;
+  align-items: flex-start;
+}
+
+input {
+  width: 30%;
+  height: 20px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+input:focus {
+  outline: none;
+}
+
+span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.div-button {
+  display: flex;
+  width: 100%;
+}
+
+.button-add {
+  width: 100px;
+  height: 30px;
+  border-radius: 6px;
+  background-color: #f3f3f3;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.button-add:hover {
+  background-color: #000;
+  color: #f3f3f3;
+  transition: 0.5s;
+}
+
+.come-back-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.come-back-item {
+  margin: 5px;
+  background-color: #330867;
+  color: #f3f3f3;
+  border-radius: 6px;
+  width: 100px;
+  height: 60px;
+  font-size: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+
+.come-back-item:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
