@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Teste simples ReactJs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Ao fazer clone do projeto
 
-## Available Scripts
+- Para instalar as dependencias
 
-In the project directory, you can run:
+### `npm install`
 
-### `npm start`
+- Para iniciar o projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `npm run start`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Caso 2
 
-### `npm test`
+- Gostariamos de fazer uma tabela de funcionarios onde podemos inserir os dados nela e mostra em tempo real, a idea e que os dados viria do backend mas como nao temos backend faremos um push num "JSON"
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Temos 3 Input que precisamos pegar o valor para inserir os funcionarios
 
-### `npm run build`
+- Temos algumas validacao nao podemos enviar campos vazios
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- A tabela deve renderizar na hora que for inserido os dados
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- voce deverar renderizar os arquivos mockados que estao na pasta Mocks
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Voce deverar adicionar alguns novos funcionarios na tabela
 
-### `npm run eject`
+- Deverar mostrar os "ID" como auto incremente
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Ao adiconar o funcionario ele deverar volta a pagina de lista e mostra um alert dizendo que o funcionario foi adicionado
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Dicas
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Para enviar os dados para o arquivos mockaup tem que ser um objeto
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- campo wage dever ser um campo number
 
-## Learn More
+- Crie os "STATE" como objeto para facilitar "NAO obrigatorio e uma DICA"
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Primeiros passos
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Voce deverar passar os arquivos via props como aprendido na mini aula que o pedro ensinou!
 
-### Code Splitting
+- O arquivo index contem o "COMPONENT" principal
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Para abrir o modal que tem para inserir os dados do funcionario vocde deverar criar um "STATE" com true e false baseado na logica que ja esta no codigo
 
-### Analyzing the Bundle Size
+- o Component "Case2" recebe 1 "PROPS"
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Component "MODAL" Recebe 2 "PROPS"
 
-### Making a Progressive Web App
+- No component "Case2" deverar conter uma renderizacao dos itemns na tabela
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Component "Modal" deverar receber os valores do "JSON" passado pelo component "Case2"
