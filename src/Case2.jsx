@@ -1,13 +1,10 @@
-import React, { useState } from "react";
-import Modal from "./Components/Modal";
+import React from "react";
 import "./styles.css";
 
 const Case2 = ({ data }) => {
-  const [modal, setModal] = useState(false);
-
   return (
     <div className="table-function">
-      {modal ? (
+      {/* {modal ? (
         <div className="modal">
           <Modal setModal={setModal} />
         </div>
@@ -35,7 +32,7 @@ const Case2 = ({ data }) => {
             </tbody>
           </table>
         </div>
-      )}
+      )} */}
     </div>
   );
 };
