@@ -1,12 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import "./styles.css";
+import Modal from './Components/Modal';
 
 const Case2 = ({ data }) => {
+
+  const [modal, setModal] = useState(true)
+
   return (
     <div className="table-function">
-      {/* {modal ? (
+      {modal ? (
         <div className="modal">
-          <Modal setModal={setModal} />
+          <Modal setModal={setModal} data={data}/>
         </div>
       ) : (
         <div className="table-container">
@@ -28,11 +32,19 @@ const Case2 = ({ data }) => {
             <tbody>
               {
                 // Aqui devera ser renderizados os funcionarios
+                data.map((person) => (
+                  <tr>
+                    <th>{person.id}</th>
+                    <th>{person.name}</th>
+                    <th>{person.profession}</th>
+                    <th>{person.wage}</th>
+                  </tr>
+                ))
               }
             </tbody>
           </table>
         </div>
-      )} */}
+      )}
     </div>
   );
 };
